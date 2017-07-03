@@ -7,22 +7,23 @@ import java.util.ArrayList;
  */
 
 public class RankingList {
-    private ArrayList<String> rankingList;
+    private ArrayList<Rankable> rankingList;
 
     public RankingList() {
-        this.rankingList = new ArrayList<String>();
+        this.rankingList = new ArrayList<Rankable>();
     }
 
-    public ArrayList<String> getRankingList() {
-        return new ArrayList<String>(rankingList);
+    public ArrayList<Rankable> getRankingList() {
+        return new ArrayList<Rankable>(rankingList);
     }
 
-//    public int getLength() {
-//        return rankingList.size();
-//    }
+    public int getLength() {
+        return rankingList.size();
+    }
 
 //    public void setUpRankingList() {
-//        String [] rankings = {
+//        Movies [] moviesInRankedOrder = {
+//
 //
 //        }
 //    }
