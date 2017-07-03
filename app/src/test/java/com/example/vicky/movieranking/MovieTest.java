@@ -75,4 +75,9 @@ public class MovieTest {
         assertEquals(1, movie9.getCurrentRanking());
     }
 
+    @Test
+    public void getMovieDetails(){
+        assertEquals("Title: Withnail and I, Genre: Comedy, Ranking: 1", movie0.getMovieDetails());
+    }
+
 }

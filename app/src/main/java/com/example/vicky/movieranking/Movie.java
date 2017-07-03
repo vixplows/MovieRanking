@@ -40,4 +40,9 @@ public class Movie {
         this.currentRanking = ranking;
     }
 
+    public String getMovieDetails() {
+       String movieDetails = "Title: " + title + ", " + "Genre: " + genre + ", " + "Ranking: " + currentRanking;
+        return movieDetails;
+    }
+
 }
