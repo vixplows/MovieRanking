@@ -2,6 +2,8 @@ package com.example.vicky.movieranking;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import static junit.framework.Assert.assertEquals;
 import static org.junit.Assert.*;;
 
 import static junit.framework.Assert.assertNotNull;
@@ -49,6 +51,28 @@ public class MovieTest {
     public void canSetTitle() {
         movie9.setTitle("Terminator 2: Judgement Day");
         assertEquals("Terminator 2: Judgement Day", movie9.getTitle());
+    }
+
+    @Test
+    public void canGetGenre() {
+        assertEquals("Comedy", movie0.getGenre());
+    }
+
+    @Test
+    public void canSetGenre() {
+        movie9.setGenre("Action");
+        assertEquals("Action", movie9.getGenre());
+    }
+
+    @Test
+    public void canGetCurrentRanking() {
+        assertEquals(1, movie0.getCurrentRanking());
+    }
+
+    @Test
+    public void canSetCurrentRanking() {
+        movie9.setCurrentRanking(1);
+        assertEquals(1, movie9.getCurrentRanking());
     }
 
 }
