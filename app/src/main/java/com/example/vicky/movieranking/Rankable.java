@@ -5,5 +5,6 @@ package com.example.vicky.movieranking;
  */
 
 public interface Rankable {
-   String getMovieDetails();
+    int getCurrentRanking();
+    void setCurrentRanking(int ranking);
 }

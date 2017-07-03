@@ -21,11 +21,9 @@ public class RankingList {
         return rankingList.size();
     }
 
-//    public void setUpRankingList() {
-//        Movies [] moviesInRankedOrder = {
-//
-//
-//        }
-//    }
+    public void addToRankingList(Rankable movie) {
+        int index = movie.getCurrentRanking() - 1;
+        this.rankingList.add(index, movie);
+    }
 
 }
